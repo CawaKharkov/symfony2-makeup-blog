@@ -41,3 +41,5 @@
 
 /var/*
 !/var/SymfonyRequirements.php
+/web/js/*
+/web/css/*
