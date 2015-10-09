@@ -19,6 +19,7 @@
 /var/bootstrap.php.cache
 /bin/*
 !bin/console
+!bin/assets
 !bin/symfony_requirements
 /vendor/
 
@@ -35,3 +36,8 @@
 
 # Composer PHAR
 /composer.phar
+
+/.idea
+
+/var/*
+!/var/SymfonyRequirements.php

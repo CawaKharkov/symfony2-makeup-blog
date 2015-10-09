@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TechMusic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link id="link" rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loadanimation"></div>
+	</div>
+	
+	<!-- Style Switcher -->
+	<div id="style-switcher-container">
+		<ul id="style-switcher">
+	        <li><a href="#" id="assets/css/style.css" style="background: #e10052"></a></li>
+	       	<li><a href="#" id="assets/css/style-turqoise.css" style="background: #19B274"></a></li>
+	        <li><a href="#" id="assets/css/style-red.css" style="background: #ec3838"></a></li>
+	        <li><a href="#" id="assets/css/style-yellow.css" style="background: #ffb03b"></a></li>
+	        <li><a href="#" id="assets/css/style-green.css" style="background: #85DB18"></a></li>
+	        <li><a href="#" id="assets/css/style-blue.css" style="background: #3498DB"></a></li>
+	        <li><a href="#" id="assets/css/style-light.css" class="button-switcher button-light">Light version</a></li>
+	        <li><a href="#" id="assets/css/style-reset.css" class="button-switcher">Reset style</a></li>
+	    </ul>
+	    <span class="switcher-toggle"><i class="icon-droplet"></i></span>
+	</div>	
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default" role="navigation">
+	  	<div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			    	<span class="sr-only">Toggle navigation</span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html">TechMusic</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Navigation links -->
+		      	<ul class="nav navbar-nav">
+		      		<!-- Home -->
+		      		<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Music is life</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="index.html">Home page model 1</a></li>
+			            	<li><a href="index-2.html">Home page model 2</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Album -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Album <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Top hits</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="album-sidebar.html">Album with sidebar</a></li>
+			            	<li><a href="album-inside.html">Inside album</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Event -->
+		        	<li class="dropdown">
+		          		<a class="selected dropdown-toggle" data-toggle="dropdown" href="#">Events <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">All in world</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="event-list-sidebar.html">Event simple list with sidebar</a></li>
+			            	<li><a href="event-gallery-sidebar.html">Event gallery with sidebar</a></li>
+			            	<li><a href="event-inside.html">Inside event</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Artists -->
+					<li>
+		          		<a href="artists.html">Artists <span class="clearfix"></span> <span class="under">Our artists</span></a>
+		        	</li>	
+		        	<!-- Gallery -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Photos &amp; video</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="gallery.html">Gallery page</a></li>
+			            	<li><a href="gallery-inside-photo.html">Inside gallery photo</a></li>
+			            	<li><a href="gallery-inside-video.html">Inside gallery video</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Pages -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Features</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="shop.html">Shop</a></li>
+			            	<li><a href="shop-product.html">Shop Product</a></li>
+			            	<li><a href="contact.html">Contact</a></li>
+			            	<li><a href="event-gallery-sidebar.html">Events</a></li>
+			            	<li><a href="album-sidebar.html">Albums</a></li>
+			            	<li><a href="artists.html">Artists</a></li>
+			            	<li><a href="gallery.html">Gallery</a></li>
+			            	<li><a href="blog-masonry.html">Blog</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Blog -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Write posts</span></a>
+			          	<ul class="left dropdown-menu" role="menu">
+			            	<li><a href="blog-thumb.html">Blog with thumb</a></li>
+			            	<li><a href="blog-masonry.html">Blog masonry 3 clumns</a></li>
+			            	<li><a href="blog-masonry-sidebar.html">Blog masonry with sidebar</a></li>
+			            	<li><a href="blog-inside-post.html">Inside post</a></li>
+			          	</ul>
+		        	</li>
+		      	</ul>
+	    	</div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Page Header -->
+	<div class="page-header-2">
+		<div class="container">
+			<h2>Event page</h2>
+			<ul class="breadcrumbs-custom">
+				<li><a href="#">Home</a> <i class="breadcrumbs-arrow icon-right-dir"></i></li>
+				<li><a href="#">Pages</a> <i class="breadcrumbs-arrow icon-right-dir"></i></li>
+				<li>Events</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Block Separator -->
+	<div class="container clearfix block-sep"></div>
+
+	<!-- Events with sidebar -->
+	<div class="container">
+		<div class="row">
+			<!-- Events list -->
+			<div class="col-sm-8">
+				<div class="events-container">
+					<ul>
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tiesto Trafic Night Party</span>
+								<span class="location">NEW ORLEANS L.A , BAMBOO CLUB</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tomorrowland festival 2014</span>
+								<span class="location">EGO CLUB, MAMAIA, R.O</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Horia Brenciu Romexpo </span>
+								<span class="location">BUCHAREST, SALA PALATULUI</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Super Night Life Event</span>
+								<span class="location">OAKLAND C.A , CREMA SUMMER</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tiesto Trafic Night Party</span>
+								<span class="location">NEW ORLEANS L.A , BAMBOO CLUB</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tomorrowland festival 2014</span>
+								<span class="location">EGO CLUB, MAMAIA, R.O</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Horia Brenciu Romexpo </span>
+								<span class="location">BUCHAREST, SALA PALATULUI</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Super Night Life Event</span>
+								<span class="location">OAKLAND C.A , CREMA SUMMER</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tiesto Trafic Night Party</span>
+								<span class="location">NEW ORLEANS L.A , BAMBOO CLUB</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tomorrowland festival 2014</span>
+								<span class="location">EGO CLUB, MAMAIA, R.O</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Horia Brenciu Romexpo </span>
+								<span class="location">BUCHAREST, SALA PALATULUI</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Super Night Life Event</span>
+								<span class="location">OAKLAND C.A , CREMA SUMMER</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tiesto Trafic Night Party</span>
+								<span class="location">NEW ORLEANS L.A , BAMBOO CLUB</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Tomorrowland festival 2014</span>
+								<span class="location">EGO CLUB, MAMAIA, R.O</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+
+						<li class="element sold">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Horia Brenciu Romexpo </span>
+								<span class="location">BUCHAREST, SALA PALATULUI</span>
+							</div>
+							<a class="sold" href="event-inside.html">Sold out</a>
+						</li>
+
+						<li class="element available">
+							<i class="icon-location-1"></i>
+							<div class="info">
+								<span class="name">Super Night Life Event</span>
+								<span class="location">OAKLAND C.A , CREMA SUMMER</span>
+							</div>
+							<a href="event-inside.html">Buy tickets</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Sidebar -->
+			<div class="col-sm-4">
+				<div class="sidebar">
+					<!-- Search -->
+					<div class="search-widget clearfix">
+						<form class="search" method="post" action="#" role="search">
+					       	<input type="text" class="search-input" placeholder="enter search keyword here...">
+					      	<button type="submit"><i class="icon-search"></i></button>
+					    </form>
+					</div> <!-- // Search -->
+
+					<!-- Popular Items -->
+					<div class="popular-items">
+						<ul class="icons" id="myTab" role="tablist">
+							<li><h4 class="heading">Popular items</h4></li>
+							<li class="active"><a href="#tab1" class="icon-pencil-1" role="tab" data-toggle="tab"></a></li>
+							<li><a href="#tab2" class="icon-music" role="tab" data-toggle="tab"></a></li>
+							<li><a href="#tab3" class="icon-location-1" role="tab" data-toggle="tab"></a></li>
+						</ul>
+
+						<div class="line-sep">
+							<span class="line"></span>
+						</div>
+
+						<div class="tab-content clearfix">
+							<!-- Popular Posts -->
+							<div class="tab-pane active popular-posts" id="tab1">
+								<a href="blog-inside-post.html" class="post">
+									<img src="assets/img/blog/post-min-1.jpg" alt="Post Img">
+									<h5>Horia Brenciu Romexpo</h5>
+									<p>Date : 17 september 2014</p>
+								</a>
+								<a href="blog-inside-post.html" class="post">
+									<img src="assets/img/blog/post-min-2.jpg" alt="Post Img">
+									<h5>Nicky Romero Miami</h5>
+									<p>07 september, 2014</p>
+								</a>
+								<a href="blog-inside-post.html" class="post">
+									<img src="assets/img/blog/post-min-3.jpg" alt="Post Img">
+									<h5>Martin Garrix Ego Club</h5>
+									<p>27 september, 2014</p>
+								</a>
+								<a href="blog-inside-post.html" class="post">
+									<img src="assets/img/blog/post-min-4.jpg" alt="Post Img">
+									<h5>Pitbull Le Gaga Club</h5>
+									<p>11 september, 2014</p>
+								</a>
+								<a href="blog-inside-post.html" class="post">
+									<img src="assets/img/blog/post-min-5.jpg" alt="Post Img">
+									<h5>Stefan Banica Bamboo</h5>
+									<p>22 september, 2014</p>
+								</a>
+							</div>
+							<!-- Popular Albums -->
+						  	<div class="tab-pane popular-albums" id="tab2">
+						  		<a href="album-inside.html" class="album">
+						  			<img src="assets/img/album/album-min-1.jpg" alt="Album Img">
+						  			<h5>Avicii - True Album</h5>
+						  			<p>Produced by Spinnin Records</p>
+						  			<div class="stars">
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  			</div>
+						  		</a>
+						  		<a href="album-inside.html" class="album">
+						  			<img src="assets/img/album/album-min-2.jpg" alt="Album Img">
+						  			<h5>Jason Derulo - Tattoos</h5>
+						  			<p>Produced by Warner Records</p>
+						  			<div class="stars">
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  			</div>
+						  		</a>
+						  		<a href="album-inside.html" class="album">
+						  			<img src="assets/img/album/album-min-3.jpg" alt="Album Img">
+						  			<h5>Rihanna - Loud Album</h5>
+						  			<p>Produced by DEF JAM</p>
+						  			<div class="stars">
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  			</div>
+						  		</a>
+						  		<a href="album-inside.html" class="album">
+						  			<img src="assets/img/album/album-min-4.jpg" alt="Album Img">
+						  			<h5>Adele - 21 Album</h5>
+						  			<p>Produced by Mashin Records</p>
+						  			<div class="stars">
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  			</div>
+						  		</a>
+						  		<a href="album-inside.html" class="album">
+						  			<img src="assets/img/album/album-min-5.jpg" alt="Album Img">
+						  			<h5>Justin Bieber - Belive</h5>
+						  			<p>Produced by Island Records</p>
+						  			<div class="stars">
+						  				<i class="icon-star-empty"></i>
+						  				<i class="icon-star-empty"></i>
+						  			</div>
+						  		</a>
+						  	</div>
+						  	<!-- Popular Events -->
+						  	<div class="tab-pane popular-events" id="tab3">
+						  		<a href="event-inside.html" class="post">
+									<img src="assets/img/event/event-min-1.jpg" alt="Event Img">
+									<h5>David Guetta launch new song</h5>
+									<p>15 september, 2014</p>
+								</a>
+								<a href="event-inside.html" class="post">
+									<img src="assets/img/event/event-min-2.jpg" alt="Event Img">
+									<h5>Tomorrowland music festival</h5>
+									<p>02 august, 2014</p>
+								</a>
+								<a href="event-inside.html" class="post">
+									<img src="assets/img/event/event-min-3.jpg" alt="Event Img">
+									<h5>Tiesto trafic night party, tickets</h5>
+									<p>25 october, 2014</p>
+								</a>
+								<a href="event-inside.html" class="post">
+									<img src="assets/img/event/event-min-4.jpg" alt="Event Img">
+									<h5>How to use “Adobe Audition”</h5>
+									<p>31 september, 2014</p>
+								</a>
+								<a href="event-inside.html" class="post">
+									<img src="assets/img/event/event-min-5.jpg" alt="Event Img">
+									<h5>Interview with Rihanna &amp; Eminem</h5>
+									<p>08 august, 2014</p>
+								</a>
+						  	</div>
+						</div>
+					</div> <!-- // Popular Items -->
+
+					<!-- Next Event -->
+					<div class="next-event">
+						<h4 class="heading">Next Event</h4>
+						<div class="line-sep">
+							<span class="line"></span>
+						</div>
+
+						<!-- Countdown -->
+						<div class="countdown clearfix">       
+						  	<ul id="countdown">
+						    	<li>
+						    	  	<span class="days">00</span>
+						    	  	<p class="timeRefDays">days</p>
+						    	</li>
+						    	<li>
+						    	  	<span class="hours">00</span>
+						    	  	<p class="timeRefHours">hours</p>
+						    	</li>
+						    	<li>
+						    	  	<span class="minutes">00</span>
+						    	  	<p class="timeRefMinutes">minutes</p>
+						    	</li>
+						    	<li>
+						    	  	<span class="seconds">00</span>
+						    	  	<p class="timeRefSeconds">seconds</p>
+						    	</li>
+						  	</ul>   
+			    		</div> <!-- // Countdown -->
+
+						<!-- Info -->
+			    		<div class="info clearfix">
+			    			<ul class="text">
+			    				<li><i class="icon-note-beamed"></i> Nicky Romero Concert</li>
+			    				<li><i class="icon-location-1"></i> Mamaia, Romania</li>
+			    				<li><i class="icon-calendar"></i> 24 november, 10 PM</li>
+			    			</ul>
+			    			<div class="buttons">
+			    				<a href="#" class="buy">Buy tickets</a>
+			    				<a href="#" class="details">More details</a>
+			    			</div>
+			    		</div>
+					</div> <!-- // Next Event -->
+
+					<!-- Gallery Photos -->
+					<div class="gallery-photos clearfix">
+						<h4 class="heading">Gallery photos</h4>
+						<div class="line-sep">
+							<span class="line"></span>
+						</div>
+
+						<ul class="gallery">
+							<li>
+								<a href="assets/img/gallery/gallery-max-1.jpg" data-lightbox="album" data-title="Photo 1">
+									<img src="assets/img/gallery/gallery-min-1.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-2.jpg" data-lightbox="album" data-title="Photo 2">
+									<img src="assets/img/gallery/gallery-min-2.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-3.jpg" data-lightbox="album" data-title="Photo 3">
+									<img src="assets/img/gallery/gallery-min-3.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-4.jpg" data-lightbox="album" data-title="Photo 4">
+									<img src="assets/img/gallery/gallery-min-4.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-5.jpg" data-lightbox="album" data-title="Photo 5">
+									<img src="assets/img/gallery/gallery-min-5.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-6.jpg" data-lightbox="album" data-title="Photo 6">
+									<img src="assets/img/gallery/gallery-min-6.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-7.jpg" data-lightbox="album" data-title="Photo 7">
+									<img src="assets/img/gallery/gallery-min-7.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+
+							<li>
+								<a href="assets/img/gallery/gallery-max-8.jpg" data-lightbox="album" data-title="Photo 8">
+									<img src="assets/img/gallery/gallery-min-8.jpg" alt="" class="img-responsive">
+								</a>
+							</li>
+						</ul>
+					</div> <!-- // Gallery Photos -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Block Separator -->
+	<div class="container clearfix block-sep"></div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 about-us">
+					<h4 class="heading">About us</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<p class="first">Fusce sed nibh porttitor, scelerisque elit id, pretium justo. Integer venenatis tempus nisi non varius. Sed dui enim, lobortis et tempor sed, varius quis lorem. </p>
+					<p>Pellentesque ligula tellus, elementum sit amet purus at, pharetra faucibus erat. Sed fermentum accumsan ipsum, non vestibulum nulla iaculis in donec tempor.</p>
+					<div class="info">
+						<img src="assets/img/elements/footer-img.jpg" alt="img">
+						<div class="sell">
+							<p><span class="colored">Sell albums :</span> you can sell albums with TechMusic.</p>
+						</div>
+						<div class="write">
+							<p><span class="colored">Write on blog :</span> you can make a beautiful blog.</p>
+						</div>
+					</div>
+				</div> 
+			
+				<div class="col-sm-4 comments">
+					<h4 class="heading">Recent comments</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>Tilvar Claudiu comment on " <a href="#">Tommorow land festival 2014</a>"</p>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>GG Mitrescu comment on " <a href="#">Interview with Rihanna &amp; Eminem</a>"</p>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>Ionut Fieraru comment on " <a href="#">Top albums on last 6 months</a>"</p>
+					</div>
+				</div>
+			
+				<div class="col-sm-4 tags">
+					<h4 class="heading">Tag cloud</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<ul class="clearfix">
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">themes wordpress</a></li>
+						<li><a href="#">audio</a></li>
+						<li><a href="#">audio-player</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<p>Copyright 2014. All Rights Reserved. Powered by Wordpress</p>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/respond.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.js"></script>
+	<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/js.js"></script>
+
+	<!-- ======== CountDown ======== -->
+	<script src="assets/js/countdown.js" type="text/javascript" charset="utf-8"></script>
+  	<script>
+		$(document).ready(function($){
+			"use strict";
+			$("#countdown").countdown({
+				date: "30 december 2015 12:00:00", // Edit this line
+				format: "on"
+			},
+			function() {
+				// callback function
+			});
+		});
+	</script>
+
+	<!-- ======== style switcher ======== -->
+	<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="assets/js/switcher.js"></script>
+</body>
+</html>

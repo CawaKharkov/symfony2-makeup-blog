@@ -1,0 +1,4 @@
+#!/bin/bash
+
+bin/console assets:install
+bin/console assetic:dump

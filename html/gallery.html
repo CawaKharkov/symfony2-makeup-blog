@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TechMusic</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+	<link id="link" rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+</head>
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="loadanimation"></div>
+	</div>
+	
+	<!-- Style Switcher -->
+	<div id="style-switcher-container">
+		<ul id="style-switcher">
+	        <li><a href="#" id="assets/css/style.css" style="background: #e10052"></a></li>
+	       	<li><a href="#" id="assets/css/style-turqoise.css" style="background: #19B274"></a></li>
+	        <li><a href="#" id="assets/css/style-red.css" style="background: #ec3838"></a></li>
+	        <li><a href="#" id="assets/css/style-yellow.css" style="background: #ffb03b"></a></li>
+	        <li><a href="#" id="assets/css/style-green.css" style="background: #85DB18"></a></li>
+	        <li><a href="#" id="assets/css/style-blue.css" style="background: #3498DB"></a></li>
+	        <li><a href="#" id="assets/css/style-light.css" class="button-switcher button-light">Light version</a></li>
+	        <li><a href="#" id="assets/css/style-reset.css" class="button-switcher">Reset style</a></li>
+	    </ul>
+	    <span class="switcher-toggle"><i class="icon-droplet"></i></span>
+	</div>	
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-default" role="navigation">
+	  	<div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			    	<span class="sr-only">Toggle navigation</span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    	<span class="icon-bar"></span>
+			    </button>
+			    <a class="navbar-brand" href="index.html">TechMusic</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+				<!-- Navigation links -->
+		      	<ul class="nav navbar-nav">
+		      		<!-- Home -->
+		      		<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Home <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Music is life</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="index.html">Home page model 1</a></li>
+			            	<li><a href="index-2.html">Home page model 2</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Album -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Album <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Top hits</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="album-sidebar.html">Album with sidebar</a></li>
+			            	<li><a href="album-inside.html">Inside album</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Event -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Events <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">All in world</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="event-list-sidebar.html">Event simple list with sidebar</a></li>
+			            	<li><a href="event-gallery-sidebar.html">Event gallery with sidebar</a></li>
+			            	<li><a href="event-inside.html">Inside event</a></li>
+			          	</ul>
+		        	</li>
+					<!-- Artists -->
+					<li>
+		          		<a href="artists.html">Artists <span class="clearfix"></span> <span class="under">Our artists</span></a>
+		        	</li>	
+		        	<!-- Gallery -->
+		        	<li class="dropdown">
+		          		<a class="selected dropdown-toggle" data-toggle="dropdown" href="#">Gallery <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Photos &amp; video</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="gallery.html">Gallery page</a></li>
+			            	<li><a href="gallery-inside-photo.html">Inside gallery photo</a></li>
+			            	<li><a href="gallery-inside-video.html">Inside gallery video</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Pages -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Features</span></a>
+			          	<ul class="dropdown-menu" role="menu">
+			            	<li><a href="shop.html">Shop</a></li>
+			            	<li><a href="shop-product.html">Shop Product</a></li>
+			            	<li><a href="contact.html">Contact</a></li>
+			            	<li><a href="event-gallery-sidebar.html">Events</a></li>
+			            	<li><a href="album-sidebar.html">Albums</a></li>
+			            	<li><a href="artists.html">Artists</a></li>
+			            	<li><a href="gallery.html">Gallery</a></li>
+			            	<li><a href="blog-masonry.html">Blog</a></li>
+			          	</ul>
+		        	</li>
+		        	<!-- Blog -->
+		        	<li class="dropdown">
+		          		<a class="dropdown-toggle" data-toggle="dropdown" href="#">Blog <i class="icon-down-open"></i> <span class="clearfix"></span> <span class="under">Write posts</span></a>
+			          	<ul class="left dropdown-menu" role="menu">
+			            	<li><a href="blog-thumb.html">Blog with thumb</a></li>
+			            	<li><a href="blog-masonry.html">Blog masonry 3 clumns</a></li>
+			            	<li><a href="blog-masonry-sidebar.html">Blog masonry with sidebar</a></li>
+			            	<li><a href="blog-inside-post.html">Inside post</a></li>
+			          	</ul>
+		        	</li>
+		      	</ul>
+	    	</div><!-- /.navbar-collapse -->
+	  	</div><!-- /.container-fluid -->
+	</nav>
+
+	<!-- Page Header -->
+	<div class="page-header-2">
+		<div class="container">
+			<h2>Gallery page</h2>
+			<ul class="breadcrumbs-custom">
+				<li><a href="#">Home</a> <i class="breadcrumbs-arrow icon-right-dir"></i></li>
+				<li><a href="#">Pages</a> <i class="breadcrumbs-arrow icon-right-dir"></i></li>
+				<li>Gallery</li>
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Block Separator -->
+	<div class="container clearfix block-sep"></div>
+	
+	<!-- Gallery -->
+	<div class="container">
+		<div class="row gallery">
+			<div class="item">
+				<img src="assets/img/gallery/item-1.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">New Year Party</span>
+					<br>
+					<span class="number">8 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-2.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">My Hot Party</span>
+					<br>
+					<span class="number">7 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-3.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">Tomorowland</span>
+					<br>
+					<span class="number">8 Videos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-4.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">Ego Club</span>
+					<br>
+					<span class="number">7 Videos</span>
+				</a>
+			</div>
+
+			<div class="item">
+				<img src="assets/img/gallery/item-5.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">Miami Beach</span>
+					<br>
+					<span class="number">8 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-6.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">Brazil Party</span>
+					<br>
+					<span class="number">7 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-7.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">Bamboo Club</span>
+					<br>
+					<span class="number">8 Videos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-8.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">In My Heart</span>
+					<br>
+					<span class="number">7 Videos</span>
+				</a>
+			</div>
+
+			<div class="item">
+				<img src="assets/img/gallery/item-1.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">New Year Party</span>
+					<br>
+					<span class="number">8 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-2.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-photo.html">
+					<span class="name">My Hot Party</span>
+					<br>
+					<span class="number">7 Photos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-3.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">Tomorowland</span>
+					<br>
+					<span class="number">8 Videos</span>
+				</a>
+			</div>
+			<div class="item">
+				<img src="assets/img/gallery/item-4.jpg" alt="Gallery img" class="img-responsive">
+				<a href="gallery-inside-video.html">
+					<span class="name">Ego Club</span>
+					<br>
+					<span class="number">7 Videos</span>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Block Separator -->
+	<div class="container clearfix block-sep"></div>
+	<!-- Footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 about-us">
+					<h4 class="heading">About us</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<p class="first">Fusce sed nibh porttitor, scelerisque elit id, pretium justo. Integer venenatis tempus nisi non varius. Sed dui enim, lobortis et tempor sed, varius quis lorem. </p>
+					<p>Pellentesque ligula tellus, elementum sit amet purus at, pharetra faucibus erat. Sed fermentum accumsan ipsum, non vestibulum nulla iaculis in donec tempor.</p>
+					<div class="info">
+						<img src="assets/img/elements/footer-img.jpg" alt="img">
+						<div class="sell">
+							<p><span class="colored">Sell albums :</span> you can sell albums with TechMusic.</p>
+						</div>
+						<div class="write">
+							<p><span class="colored">Write on blog :</span> you can make a beautiful blog.</p>
+						</div>
+					</div>
+				</div> 
+			
+				<div class="col-sm-4 comments">
+					<h4 class="heading">Recent comments</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>Tilvar Claudiu comment on " <a href="#">Tommorow land festival 2014</a>"</p>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>GG Mitrescu comment on " <a href="#">Interview with Rihanna &amp; Eminem</a>"</p>
+					</div>
+					<div class="comment">
+						<img src="assets/img/elements/avatar.jpg" alt="avatar">
+						<p>Ionut Fieraru comment on " <a href="#">Top albums on last 6 months</a>"</p>
+					</div>
+				</div>
+			
+				<div class="col-sm-4 tags">
+					<h4 class="heading">Tag cloud</h4>
+					<div class="line-sep">
+						<span class="line"></span>
+					</div>
+					<ul class="clearfix">
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">themes wordpress</a></li>
+						<li><a href="#">audio</a></li>
+						<li><a href="#">audio-player</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">web-design</a></li>
+						<li><a href="#">music</a></li>
+						<li><a href="#">photography</a></li>
+						<li><a href="#">blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<p>Copyright 2014. All Rights Reserved. Powered by Wordpress</p>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery -->
+	<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/respond.min.js"></script>
+	<script type="text/javascript" src="assets/js/masonry.js"></script>
+	<script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/js.js"></script>
+
+	<!-- ======== style switcher ======== -->
+	<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="assets/js/switcher.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <!-- CSS -->
+
+    {% stylesheets  filter='cssrewrite'
+    '@AppBundle/Resources/public/css/bootstrap.css'
+    '@AppBundle/Resources/public/rs-plugin/css/settings.css'
+    '@AppBundle/Resources/public/css/style.css'
+
+    '@AppBundle/Resources/public/css/flaticon.css'
+    '@AppBundle/Resources/public/css/fonts.css'
+    '@AppBundle/Resources/public/css/entypo.css'
+    '@AppBundle/Resources/public/css/lightbox.css'
+
+    %}
+    <link rel="stylesheet" href="{{ asset_url }}"/>
+    {% endstylesheets %}
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+
+    <!-- jQuery -->
+    {% javascripts
+    '@AppBundle/Resources/public/js/jquery.js'
+    '@AppBundle/Resources/public/js/modernizr.custom.js' %}
+    <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+</head>
+<body>
+{% block body %}
+{% endblock %}
+
+{% javascripts
+'@AppBundle/Resources/public/js/smooth-scroll.js'
+'@AppBundle/Resources/public/js/bootstrap.min.js'
+'@AppBundle/Resources/public/js/respond.min.js'
+'@AppBundle/Resources/public/js/masonry.js'
+'@AppBundle/Resources/public/js/lightbox.min.js'
+'@AppBundle/Resources/public/js/js.js'
+'@AppBundle/Resources/public/rs-plugin/js/jquery.themepunch.plugins.min.js'
+'@AppBundle/Resources/public/rs-plugin/js/jquery.themepunch.revolution.min.js'
+'@AppBundle/Resources/public/js/countdown.js'
+%}
+<script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        // jQuery REVOLUTION Slider
+        "use strict";
+        jQuery('.tp-banner').show().revolution(
+                {
+                    delay:4000,
+                    startwidth:1920,
+                    startheight:720,
+                    hideThumbs:100,
+                    fullWidth:"on",
+                    fullScreen:"off",
+                    navigationStyle: "off",
+                    shadow: 0,
+                    autoHeight:"off",
+                });
+
+
+        // CountDown
+        $("#countdown").countdown({
+                    date: "30 december 2015 12:00:00", // Edit this line
+                    format: "on"
+                },
+                function() {
+                    // callback function
+                });
+        $("#countdown-2").countdown({
+                    date: "30 december 2015 12:00:00", // Edit this line
+                    format: "on"
+                },
+                function() {
+                    // callback function
+                });
+    });
+</script>
+
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>
