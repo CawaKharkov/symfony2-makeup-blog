@@ -10,13 +10,12 @@ parameters:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator: { fallbacks: [en] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
         strict_requirements: ~
     form:            ~
-    csrf_protection: ~
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
     templating:
@@ -54,24 +53,75 @@ assetic:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   pdo_mysql
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
+        host: "%database_host%"
+        port: "%database_port%"
+        dbname: "%database_name%"
+        user: "%database_user%"
         password: "%database_password%"
-        charset:  UTF8
+        charset: UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml
         #     e.g. database_path: "%kernel.root_dir%/data/data.db3"
         #   2. Uncomment database_path in parameters.yml.dist
         #   3. Uncomment next line:
-        #     path:     "%database_path%"
+        #     path: "%database_path%"
+
+     #   types:
+     #       point:
+     #           class: CrEOF\Spatial\DBAL\Types\Geography\PointType
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
+        default_entity_manager: default
+
+        entity_managers:
+            default:
+      #          metadata_cache_driver:
+      #              type: service
+      #              id: doctrine.cache.memcached
+      #          query_cache_driver:
+      #              type: service
+      #              id: doctrine.cache.memcached
+      #          result_cache_driver:
+      #              type: service
+      #              id: doctrine.cache.memcached
+                auto_mapping: true
+                dql:
+                    numeric_functions:
+#                        gLength: CrEOF\Spatial\ORM\Query\AST\Functions\MySql\GLength
+#                        groupConcat: AppBundle\ORM\Query\Functions\MySql\GroupConcat
+#                        itemStatus: AppBundle\ORM\Query\Functions\MySql\ItemStatus
+#                        itemCancelStatus: AppBundle\ORM\Query\Functions\MySql\ItemCancelStatus
+#                        lineString: AppBundle\ORM\Query\Functions\MySql\LineString
+#                        lineStringFromWKB: AppBundle\ORM\Query\Functions\MySql\LineStringFromWKB
+#                        point: AppBundle\ORM\Query\Functions\MySql\Point
+#                        userRating: AppBundle\ORM\Query\Functions\MySql\UserRating
+#                        userResponseRate: AppBundle\ORM\Query\Functions\MySql\UserResponseRate
+#                        userResponseTime: AppBundle\ORM\Query\Functions\MySql\UserResponseTime
+                    string_functions:
+                        DATE_FORMAT: DoctrineExtensions\Query\Mysql\DateFormat
+
+                mappings:
+                    loggable:
+                        type: annotation
+                        alias: Gedmo
+                        prefix: Gedmo\Loggable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity"
+
+                    translatable:
+                        type: annotation
+                        alias: Gedmo
+                        prefix: Gedmo\Translatable\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity"
+                    tree:
+                        type: annotation
+                        alias: Gedmo
+                        prefix: Gedmo\Tree\Entity
+                        dir: "%kernel.root_dir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity"
+
+
+sensio_framework_extra:
+    view: { annotations: false }
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -80,3 +130,23 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+knp_menu:
+    # use "twig: false" to disable the Twig extension and the TwigRenderer
+    twig:
+        template: knp_menu.html.twig
+    #  if true, enables the helper for PHP templates
+    templating: false
+    # the renderer to use, list is also available by default
+    default_renderer: twig
+
+knp_paginator:
+    page_range: 5                      # default page range used in pagination control
+    default_options:
+        page_name: page                # page query parameter name
+        sort_field_name: sort          # sort field query parameter name
+        sort_direction_name: direction # sort direction query parameter name
+        distinct: true                 # ensure distinct results, useful when ORM queries are using GROUP BY statements
+    template:
+        pagination: KnpPaginatorBundle:Pagination:twitter_bootstrap_v3_pagination.html.twig     # sliding pagination controls template
+        sortable: KnpPaginatorBundle:Pagination:sortable_link.html.twig # sort link template
